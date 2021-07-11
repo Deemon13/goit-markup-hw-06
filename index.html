@@ -516,69 +516,83 @@
           </svg>
         </button>
         <form name="purchase_form" autocomplete="on" class="modal-form-purchase">
-          <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="modal-form-label">
-            Имя
-            <div class="input-container">
-              <input class="modal-form-input" type="text" name="name" />
-              <div class="input-placeholder-icon-container">
-                <svg class="input-placeholder-icon" width="12" height="12">
-                  <use href="./images/icons.svg#person-black"></use>
-                </svg>
+          <div class="form-group-contacts" role="group" aria-labelledby="contacts-details">
+            <p id="contacts-details" class="modal-form-title">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+            <label class="modal-form-label">
+              Имя
+              <div class="input-container">
+                <input class="modal-form-input" type="text" name="name" autofocus />
+                <div class="input-placeholder-icon-container">
+                  <svg class="input-placeholder-icon" width="12" height="12">
+                    <use href="./images/icons.svg#person-black"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </label>
-          <label class="modal-form-label">
-            Телефон
-            <div class="input-container">
-              <input class="modal-form-input" type="tel" name="phone-number" />
-              <div class="input-placeholder-icon-container">
-                <svg class="input-placeholder-icon" width="13" height="13">
-                  <use href="./images/icons.svg#phone-black"></use>
-                </svg>
+            </label>
+            <label class="modal-form-label">
+              Телефон
+              <div class="input-container">
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="phone-number"
+                  pattern="[\+]*[1-9]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
+                  title="Номер телефона в формате: +__(___)___-__-__"
+                />
+                <div class="input-placeholder-icon-container">
+                  <svg class="input-placeholder-icon" width="13" height="13">
+                    <use href="./images/icons.svg#phone-black"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </label>
-          <label class="modal-form-label">
-            Почта
-            <div class="input-container">
-              <input class="modal-form-input" type="email" name="email" />
-              <div class="input-placeholder-icon-container">
-                <svg class="input-placeholder-icon" width="15" height="12">
-                  <use href="./images/icons.svg#email-black"></use>
-                </svg>
+            </label>
+            <label class="modal-form-label">
+              Почта
+              <div class="input-container">
+                <input class="modal-form-input" type="email" name="email" />
+                <div class="input-placeholder-icon-container">
+                  <svg class="input-placeholder-icon" width="15" height="12">
+                    <use href="./images/icons.svg#email-black"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </label>
-          <label class="modal-form-label">
-            Комментарий
-            <textarea
-              class="modal-form-textarea"
-              name="feedback"
-              rows="5"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
-          <label class="modal-form-label label-checkbox">
-            <input
-              class="modal-form-label-checkbox visually-hidden"
-              type="checkbox"
-              name="checked"
-              value="agreed"
-            />
-            <div class="checkbox-container" data-check>
-              <span class="checkbox-icon-container" data-checked>
-                <svg class="checkbox-icon" width="11" height="8">
-                  <use href="./images/icons.svg#checked"></use>
-                </svg> </span
-              ><span class="checkbox-text"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="form-checkbox-link" href="#" target="_blank" rel="noopener noreferrer"
-                  >Условия договора</a
-                ></span
-              >
-            </div>
-          </label>
+            </label>
+            <label class="modal-form-label modal-comments">
+              Комментарий
+              <textarea
+                class="modal-form-textarea"
+                name="feedback"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-group-checkbox" role="group" aria-labelledby="subcscribe-offer">
+            <p id="subcscribe-offer" class="modal-form-title visually-hidden">Условия подписки</p>
+            <label class="modal-form-label label-checkbox">
+              <input
+                class="modal-form-label-checkbox visually-hidden"
+                type="checkbox"
+                name="checked"
+                value="agreed"
+              />
+              <div class="checkbox-container" data-check>
+                <span class="checkbox-icon-container" data-checked>
+                  <svg class="checkbox-icon" width="11" height="8">
+                    <use href="./images/icons.svg#checked"></use>
+                  </svg> </span
+                ><span class="checkbox-text"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a class="form-checkbox-link" href="#" target="_blank" rel="noopener noreferrer"
+                    >Условия договора</a
+                  ></span
+                >
+              </div>
+            </label>
+          </div>
+
           <div class="button-container">
             <button type="submit" class="modal-subscribe-button btn">Отправить</button>
           </div>

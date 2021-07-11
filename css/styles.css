@@ -774,6 +774,10 @@ textarea:focus {
   flex-direction: column;
 }
 
+.form-group-contacts {
+  margin-bottom: 20px;
+}
+
 .modal-button-close {
   position: absolute;
   top: 8px;
@@ -853,6 +857,10 @@ textarea:focus {
   fill: var(--accent-color);
 }
 
+.modal-comments {
+  margin-bottom: 0;
+}
+
 .modal-form-textarea {
   margin-top: 4px;
   padding: 12px 16px;
@@ -878,8 +886,13 @@ textarea:focus {
   border-color: var(--accent-color);
 }
 
+.form-group-checkbox {
+  margin-bottom: 30px;
+}
+
 .label-checkbox {
   flex-direction: row;
+  margin-bottom: 0;
 }
 
 .checkbox-container {

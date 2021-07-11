@@ -573,14 +573,19 @@ textarea:focus {
   margin-top: 12px;
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
 .footer-input-subscribe {
+  margin-right: 12px;
   width: 358px;
   padding: 14px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-size: 16px;
+  font-size: var(--secondary-text-size);
   line-height: 1.25;
-  letter-spacing: 0.03em;
   color: var(--secondary-color-transp);
   background-color: transparent;
 }

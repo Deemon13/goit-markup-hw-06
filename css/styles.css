@@ -893,6 +893,7 @@ textarea:focus {
 .label-checkbox {
   flex-direction: row;
   margin-bottom: 0;
+  align-items: center;
 }
 
 .checkbox-container {
@@ -912,7 +913,14 @@ textarea:focus {
   fill: var(--main-color-light);
 }
 
-.is-checked {
+.modal-form-label-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.modal-form-label-checkbox:checked + .checkbox-icon-container {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }

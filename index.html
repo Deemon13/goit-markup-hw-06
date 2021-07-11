@@ -571,25 +571,25 @@
           </div>
           <div class="form-group-checkbox" role="group" aria-labelledby="subcscribe-offer">
             <p id="subcscribe-offer" class="modal-form-title visually-hidden">Условия подписки</p>
-            <label class="modal-form-label label-checkbox">
+
+            <label class="modal-form-label label-checkbox" for="checkbox-icon">
               <input
-                class="modal-form-label-checkbox visually-hidden"
+                id="checkbox-icon"
+                class="modal-form-label-checkbox"
                 type="checkbox"
                 name="checked"
                 value="agreed"
               />
-              <div class="checkbox-container" data-check>
-                <span class="checkbox-icon-container" data-checked>
-                  <svg class="checkbox-icon" width="11" height="8">
-                    <use href="./images/icons.svg#checked"></use>
-                  </svg> </span
-                ><span class="checkbox-text"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a class="form-checkbox-link" href="#" target="_blank" rel="noopener noreferrer"
-                    >Условия договора</a
-                  ></span
-                >
-              </div>
+              <span class="checkbox-icon-container" data-checked>
+                <svg class="checkbox-icon" width="11" height="8">
+                  <use href="./images/icons.svg#checked"></use>
+                </svg> </span
+              ><span class="checkbox-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="form-checkbox-link" href="#" target="_blank" rel="noopener noreferrer"
+                  >Условия договора</a
+                ></span
+              >
             </label>
           </div>
 
@@ -601,6 +601,5 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/checked.js"></script>
   </body>
 </html>

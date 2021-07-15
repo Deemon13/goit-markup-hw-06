@@ -586,8 +586,12 @@ textarea:focus {
   border-radius: 4px;
   font-size: var(--secondary-text-size);
   line-height: 1.25;
-  color: var(--secondary-color-transp);
+  color: var(--main-color-light);
   background-color: transparent;
+}
+
+.footer-input-subscribe::placeholder {
+  color: var(--secondary-color-transp);
 }
 
 .btn-text-container {
@@ -852,13 +856,14 @@ textarea:focus {
   align-items: flex-end;
   width: 18px;
   height: 18px;
+  fill: var(--logo-color);
 }
 
 .modal-form-input:focus {
   border-color: var(--accent-color);
 }
 
-.input-container:focus-within {
+.modal-form-input:focus + .input-placeholder-icon-container {
   fill: var(--accent-color);
 }
 
@@ -870,6 +875,7 @@ textarea:focus {
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
+  height: 120px;
   border-radius: 4px;
   font-size: var(--secondary-text-size);
   transition: border-color var(--main-transition-duration) var(--main-transition-function);
@@ -908,6 +914,7 @@ textarea:focus {
   margin-right: 7px;
   width: 16px;
   height: 15px;
+  cursor: pointer;
   border: 1px solid var(--main-color-dark);
   border-radius: 2px;
   fill: var(--main-color-light);
